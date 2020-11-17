@@ -72,11 +72,11 @@ search(e){
      
 
     <Switch>
-    <Route exact path="/">
+    <Route exact path="/home">
         <Banner search={this.search}/>
         <Home data={this.state.data} setId={this.setId}/>
       </Route>
-      <Route  path="/:id" >
+      <Route  path="/home/:id" >
          <Id data={this.state.targetValue}/>
       </Route>
     </Switch>

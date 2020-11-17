@@ -18,7 +18,7 @@ constructor(props) {
     {
 this.props.data.map((e,index) =>{
     return (
-        <Link to={`/${e.id}`} key={e.id}  onClick={this.props.setId}>
+        <Link to={`/home/${e.id}`} key={e.id}  onClick={this.props.setId}>
                 <Card e={e} />
         </Link>
     );
